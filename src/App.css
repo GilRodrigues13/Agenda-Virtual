@@ -1,38 +1,146 @@
-.App {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F4F4;
+  padding: 30px;
+  color: #333;
+  background-color: #A14847;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+
+
+.app {
+  max-width: 1000px; 
+  margin: 0 auto; 
+  background-color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+  position: relative; 
+  overflow: hidden; 
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333974;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.calendar {
+  overflow-x: auto; 
+}
+
+.calendar table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.calendar th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.todo {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 25vh;
+  height: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.complete {
+  background-color: #5cb85c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove {
+  background-color: #d9534f;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.todo-form input[type="color"] {
+  padding: 5px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 4vh;
+  height: 4vh;
+  outline: none; 
+  cursor: pointer; 
+}
+
+
+.filter,
+.search {
+  border-bottom: 1px solid #555;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-options div {
+  flex: 1 1 0;
 }

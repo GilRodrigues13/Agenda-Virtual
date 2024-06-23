@@ -1,0 +1,28 @@
+/* Todo.css */
+
+.todo {
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .complete {
+    background-color: #5cb85c; 
+    color: #ffffff; 
+  }
+  
+  .remove {
+    background-color: #d9534f; 
+    color: #ffffff; 
+  }
+  
+  .todo.study {
+    background-color: #b3ffb3; 
+    
+  }
+  
